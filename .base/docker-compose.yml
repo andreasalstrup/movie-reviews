@@ -1,0 +1,19 @@
+
+version: "3"
+services:
+  emily-movie-reviews-33s7de:
+    image: emily-movie-reviews-33s7de
+    container_name: emily-movie-reviews-33s7de
+    build:
+      context: ../
+
+    volumes:
+      - ../:/workspace:cached
+
+    networks:
+      - emily-movie-reviews-33s7de-network
+
+networks:
+  emily-movie-reviews-33s7de-network:
+    name: emily-movie-reviews-33s7de-network
+    driver: bridge

@@ -1,0 +1,29 @@
+
+version: "3"
+services:
+  emily-movie-reviews-33s7de-prod:
+    image: emily-movie-reviews-33s7de-prod
+    container_name: emily-movie-reviews-33s7de-prod
+    command: python3 ${MAIN} -e ".prod.env"
+    restart: always
+    ports:
+      - ${HOST_PORT}:${CONTAINER_PORT}
+    networks:
+      - emily-movie-reviews-33s7de-prod-network
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/workspace:cached
+      - ./:/workspace/data
+
+    runtime: ${RUNTIME}
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES}
+      - NVIDIA_DRIVER_CAPABILITIES=${NVIDIA_DRIVER_CAPABILITIES}
+    ipc: ${IPC}
+networks:
+  emily-movie-reviews-33s7de-prod-network:
+    name: emily-movie-reviews-33s7de-prod-network
+    driver: bridge
+  

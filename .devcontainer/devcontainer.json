@@ -1,0 +1,22 @@
+
+{
+  "name": "movie-reviews",
+  "dockerComposeFile": [
+    "../.base/docker-compose.yml", "./docker-compose.yml"
+  ],
+  "service": "emily-movie-reviews-33s7de",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "ms-python.python", 
+    "ms-azuretools.vscode-docker", 
+    "hnw.vscode-auto-open-markdown-preview", 
+    "ms-python.vscode-pylance"
+  ],
+  "runServices": [],
+  "remoteEnv": {},
+  "settings": {
+    "terminal.integrated.shell.linux": null
+  }
+}
+
