@@ -1,0 +1,29 @@
+
+version: "3"
+services:
+  emily-mv-w4tczb-prod:
+    image: emily-mv-w4tczb-prod
+    container_name: emily-mv-w4tczb-prod
+    command: python3 ${MAIN} -e ".prod.env"
+    restart: always
+    ports:
+      - ${HOST_PORT}:${CONTAINER_PORT}
+    networks:
+      - emily-mv-w4tczb-prod-network
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/workspace:cached
+
+
+    runtime: ${RUNTIME}
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES}
+      - NVIDIA_DRIVER_CAPABILITIES=${NVIDIA_DRIVER_CAPABILITIES}
+    ipc: ${IPC}
+networks:
+  emily-mv-w4tczb-prod-network:
+    name: emily-mv-w4tczb-prod-network
+    driver: bridge
+  

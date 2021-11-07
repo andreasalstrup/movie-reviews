@@ -3060,3 +3060,43 @@ AttributeError: 'map' object has no attribute 'tolist'
 2021-11-05 23:42:59.053 | INFO     | middleware.logging:_http_request_logging_middleware:15 - HTTP 200 for http://localhost:4545/api/predict
 2021-11-05 23:43:50.832 | INFO     | middleware.logging:_http_request_logging_middleware:13 - HTTP POST for http://localhost:4545/api/predict
 2021-11-05 23:43:51.543 | INFO     | middleware.logging:_http_request_logging_middleware:15 - HTTP 200 for http://localhost:4545/api/predict
+[2021-11-07 05:02:46] DEBUG: Emily could not find the file /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/config.json.   - traced from config.service.js:212:23 >> config.service.js:63:33 >> instantiation.js:45:18 >> resolver.js:72:42 >> instantiation.js:11:57 >> instantiation.js:42:18 >> resolver.js:72:42 >> instantiation.js:11:57
+[2021-11-07 05:02:46] DEBUG: Checking if command emily exists 
+[2021-11-07 05:02:46] DEBUG: Command emily exists 
+[2021-11-07 05:02:46] DEBUG: Checking if command emily exists 
+[2021-11-07 05:02:46] DEBUG: Command emily exists 
+[2021-11-07 05:02:46] DEBUG: Event: {"@timestamp":"2021-11-07T16:02:46.140Z","platform":"linux","installationId":"db6028aeddb8303054deaec37ac4a465","environment":"production","version":"1.2.5","message":"Installed on linux","level":"info","event":{"name":"installed","value":"1.2.5"}} 
+[2021-11-07 05:02:46] DEBUG: Checking if command emily exists 
+[2021-11-07 05:02:46] DEBUG: Command emily exists 
+[2021-11-07 05:02:46] VERBOSE: HTTP GET: https://emily-services-prod.northeurope.cloudapp.azure.com/templates/get-templates 
+[2021-11-07 05:02:46] VERBOSE: Response: 200 OK 
+[2021-11-07 05:02:46] VERBOSE: Checking for directory /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/.cache... 
+[2021-11-07 05:02:46] VERBOSE: Making directory: "/home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/.cache" 
+[2021-11-07 05:02:46] VERBOSE: Writing /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/.cache/.templates.json... 
+[2021-11-07 05:02:46] DEBUG: Executing emily command: /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/emily /snapshot/emily-CLI/dist/src/app.js doctor --no-update --silent --fix docker docker-compose 
+[2021-11-07 05:02:46] DEBUG: Parsed emily command arguments: {} 
+[2021-11-07 05:02:46] DEBUG: Parsed emily command options: {"update":false,"silent":true,"fix":["docker","docker-compose"],"optional":true} 
+[2021-11-07 05:02:46] VERBOSE: HTTP GET: https://emily-services-prod.northeurope.cloudapp.azure.com/templates/get-templates 
+[2021-11-07 05:02:46] VERBOSE: Response: 200 OK 
+[2021-11-07 05:02:46] VERBOSE: Checking for directory /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/.cache... 
+[2021-11-07 05:02:46] VERBOSE: Writing /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU/movie-reviews/linux/.cache/.templates.json... 
+[2021-11-07 05:02:46] DEBUG: Emily: Running Emily Doctor...
+ 
+[2021-11-07 05:02:46] DEBUG: Emily: Attempting to fix Docker...
+ 
+[2021-11-07 05:02:46] VERBOSE: Checking Docker... 
+[2021-11-07 05:02:46] DEBUG: Checking if command docker exists 
+[2021-11-07 05:02:46] DEBUG: Command docker exists 
+[2021-11-07 05:02:46] DEBUG: Emily: Docker is already installed
+ 
+[2021-11-07 05:02:46] DEBUG: Emily: Issue successfully resolved: Docker
+ 
+[2021-11-07 05:02:46] DEBUG: Emily: Attempting to fix Docker Compose...
+ 
+[2021-11-07 05:02:46] VERBOSE: Checking Docker Compose... 
+[2021-11-07 05:02:46] DEBUG: Checking if command docker-compose exists 
+[2021-11-07 05:02:46] DEBUG: Command docker-compose exists 
+[2021-11-07 05:02:46] DEBUG: Emily: Docker Compose is already installed
+ 
+[2021-11-07 05:02:46] DEBUG: Emily: Issue successfully resolved: Docker Compose
+ 

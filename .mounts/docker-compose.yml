@@ -3,4 +3,4 @@ services:
   emily-movie-reviews-33s7de:
     
     volumes:
-      - /Users/Snoobeedoo/Desktop/coding/dmiAI/DM-i-AI:/workspace/data
+      - /home/novem-desktop/Insync/andreas090994@gmail.com/Google Drive/AAU:/workspace/data

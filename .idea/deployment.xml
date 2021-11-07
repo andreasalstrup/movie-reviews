@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="movie-reviews@localhost:64992">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/workspace" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="movie-reviews@localhost:64992 key">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/workspace" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

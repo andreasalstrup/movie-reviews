@@ -1,0 +1,19 @@
+
+version: "3"
+services:
+  emily-mv-w4tczb:
+    image: emily-mv-w4tczb
+    container_name: emily-mv-w4tczb
+    build:
+      context: ../
+
+    volumes:
+      - ../:/workspace:cached
+
+    networks:
+      - emily-mv-w4tczb-network
+
+networks:
+  emily-mv-w4tczb-network:
+    name: emily-mv-w4tczb-network
+    driver: bridge

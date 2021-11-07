@@ -1,0 +1,17 @@
+
+version: "3"
+services:
+  emily-movie-reviews-33s7de:
+
+    build:
+      dockerfile: ./.idea/Dockerfile
+
+    ports:
+      - "${PYCHARM_HOST_SSH_PORT}:${PYCHARM_CONTAINER_SSH_PORT}"
+      - "${HOST_PORT}:${CONTAINER_PORT}"
+
+    runtime: ${RUNTIME}
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES}
+      - NVIDIA_DRIVER_CAPABILITIES=${NVIDIA_DRIVER_CAPABILITIES}
+    ipc: ${IPC}

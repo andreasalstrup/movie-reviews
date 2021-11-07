@@ -1,0 +1,10 @@
+{
+    "id": "33S7DE",
+    "name": "movie-reviews",
+    "containerName": "emily-movie-reviews-33s7de",
+    "image": "torch-nlp",
+    "imageVersion": "1.0.0",
+    "mountTargets": [
+        "/workspace/data"
+    ]
+}

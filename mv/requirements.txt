@@ -1,0 +1,24 @@
+
+# ---- Added by the Emily CLI ----
+asgiref
+asyncio
+Brotli
+enum34
+gensim
+hypothesis
+importlib-metadata
+JPype1
+keyring
+lxml
+monotonic
+mypy
+nose
+numba
+ordereddict
+pip
+pyOpenSSL
+PySocks
+pytest
+setuptools
+wheel
+zipp

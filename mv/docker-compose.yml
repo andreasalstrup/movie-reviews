@@ -1,0 +1,9 @@
+
+version: "3"
+services:
+  emily-movie-reviews-33s7de:
+
+    # Add your custom configuration here!
+
+    networks:
+      - emily-movie-reviews-33s7de-network
